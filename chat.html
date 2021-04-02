@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">    
+        <head>
+                <meta charset="utf-8" />
+                <title>chat</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!--BOOTSTRAP-->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        </head>
+        <body>
+                <div class="container-fluid">
+                        <p class="text-center">un ejemplo</p>
+                        <div class="row">
+                                <div class="col-lg-8 offset-lg-4 col-md-8 offset-md-4">
+                                        <script>
+                                                function enviar() {
+                                                        let msg = $("#msg").val();
+                                                        $("#msg").val("");
+                                                        $("#mensaje").append("<li>"+msg+"</li>");
+                                                }
+                                        </script>
+                                        <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+                                                <div class="d-flex justify-content-end">
+                                                    <div id="chat" role="log" class="text-right">
+                                                         <ul id="mensaje" style="list-style-type: none;"></ul>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="fixed-bottom">
+                                                <form class="d-flex justify-content-center">
+                                                        <label for="msg" class="my-auto">Mensaje:</label>
+                                                        <input type="text" id="msg" placeholder="escriba su mensaje" class="form-control mx-4"/>
+                                                        <input type="button" onclick="enviar()" value="enviar">
+                                                </form>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                
+                <!--SCRIPTS-->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        </body>
+</html>
